@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Text</h1>
+	<button>Zoom +</button>
+	<button>Zoom -</button>
+	<script type="text/javascript">
+		const it = document.getElementsByTagName('h1')[0];
+		const buttons = document.getElementsByTagName('button');
+		let px = 50;
+
+
+		buttons[0].onclick = function () {
+			px++;
+			it.style.fontSize = px + 'px';
+		}
+
+		buttons[1].onclick = function () {
+			px--;
+			it.style.fontSize = px + 'px';
+		}
+			
+       
+
+	</script>
+
+</body>
+</html>

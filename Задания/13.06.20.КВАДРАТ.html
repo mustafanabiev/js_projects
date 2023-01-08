@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.a{
+			width: 200px;
+			height: 200px;
+			border:3px solid black;
+			margin: 20px;
+			border-radius: 100%;
+		}
+		.b{
+			
+			background-color: red;
+		}
+		.c{
+			background-color: yellow;
+
+		}
+		.d{
+			background-color: green;
+		}
+
+
+		
+	</style>
+	<title></title>
+</head>
+<body>
+	<div class="a"></div>
+	<div class=a></div>
+	<div class="a"></div>
+
+	<script type="text/javascript">
+		const it1 = document.querySelectorAll('div')[0];
+		const it2 = document.querySelectorAll('div')[1];
+		const it3 = document.querySelectorAll('div')[2];
+
+		it1.addEventListener('click', () => {
+			if (it1.classList.contains('b')) {
+				it1.classList.remove('b');
+			}else{
+				it1.classList.add('b');
+			}
+		})
+		it2.addEventListener('click', () => {
+			if (it2.classList.contains('c')) {
+				it2.classList.remove('c');
+			}else{
+				it2.classList.add('c');
+			}
+		})
+		it3.addEventListener('click', () => {
+			if (it3.classList.contains('d')) {
+				it3.classList.remove('d');
+			}else{
+				it3.classList.add('d');
+			}
+		})
+		
+		
+	</script>
+
+</body>
+</html>

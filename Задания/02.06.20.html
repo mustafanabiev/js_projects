@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>JS DOM</h1>
+	<h2>0</h2>
+	<button>Next</button>
+	<script type="text/javascript">
+		const number = document.getElementsByTagName('h2')[0];
+		const musu = document.getElementsByTagName('button')[0];
+		const limit = +prompt('Лимит');
+
+		musu.onclick = function () {
+			number.innerText++;
+			if (number.innerText > limit) {
+				number.innerText = 0;
+
+			}
+		
+		}
+		
+
+		
+
+	</script>
+
+</body>
+</html>

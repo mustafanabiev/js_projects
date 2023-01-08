@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<center style = 'border: 5px solid red; padding: 50px;' >
+		<h1 style="padding:50px; font-size: 100px" >0</h1>
+		<div>
+			<button>Start</button>
+			<button>Stop</button>
+			<button>Reset</button>
+		</div>
+	</center>
+	<script type="text/javascript">
+		const numder = document.getElementsByTagName('h1')[0];
+		const Start = document.getElementsByTagName('button')[0];
+		const Stop = document.getElementsByTagName('button')[1];
+		const Reset = document.getElementsByTagName('button')[2];
+		let asan = 0;
+		
+		Start.onclick = function () {
+			if (asan == 0 ) {
+				asan = setInterval(() => {
+				numder.innerText++;
+			},200);
+
+			}
+		}
+
+		Stop.onclick = function () {
+			
+			clearInterval(
+				asan );
+			asan = 0;
+			
+		}
+		Reset.onclick = function () {
+			
+			clearInterval(
+				asan );
+			numder.innerText = 0;
+			asan = 0;
+			}
+
+	
+	</script>
+
+</body>
+</html>

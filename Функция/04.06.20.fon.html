@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body id="fon">
+
+	
+	<script type="text/javascript">
+		let i = 0;
+		let colors = ['red','green','yellow']
+		const fon = document.getElementById('fon');
+		
+		const fon1 = () => {
+			fon.style.backgroundColor = colors[i];
+			i++;
+			if (i == 3) {
+				i = 0;
+			}
+			
+
+
+		}
+		setInterval(fon1,500);
+	</script>
+  
+</body>
+</html>

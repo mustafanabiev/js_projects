@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Имя</h1>
+	<input type="Name" name="">
+	<button>press up</button>
+	<script type="text/javascript">
+		let h1 = document.querySelector('h1');
+		let input = document.querySelector('input');
+		let button = document.querySelector('button');
+		
+		button.addEventListener('click',Clicked);
+		function Clicked() {
+			h1.textContent = input.value;
+			if (input.value == ['']) {
+				h1.textContent = 'try again'	
+			}else{
+				h1.textContent = input.value;
+			}
+		}
+	</script>
+
+</body>
+</html>	
